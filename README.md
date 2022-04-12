@@ -6,4 +6,4 @@
 **Made By MEG Team** <br>
 *Pizza's restaurant page*
 
-[Website Link](https://megteam.github.io/Pizzas/)
+[Website Link](https://megteam.github.io/OrganicGarden/)
