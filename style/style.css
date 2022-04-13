@@ -3,3 +3,146 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+* {
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.refr-back{
+background-color: #ffd900;
+}
+
+.refr-section{
+    background-color: #ffd900;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
+
+.refr-section ol{
+    padding: 15px;
+}
+
+.green-restaurants{
+    display: inline-block;
+    border: 2px solid #ffffff;
+    background-color: #ffffff;
+    padding: 9% 5%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.main-heading{
+    color: #2a304d;
+    font-size: 55px;
+    font-family: 'Fjalla One';
+    padding-bottom: 4%;
+    font-weight: 400;
+}
+
+.restaurants-lists{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    padding-top: 2%;
+    font-style: italic;
+}
+
+.eco-friendly{
+    display: inline-block;
+    border: 2px solid #2a304d;
+    background-color: #2a304d;
+    padding: 12% 2%;
+    margin-bottom: 3%;
+    margin-top: 3%;
+}
+
+.eco-heading{
+    font-weight: 400;
+    color: #cbcfe6;
+    font-size: 55px;
+    font-family: 'Fjalla One';
+}
+
+.eco-paragraph{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+    padding-top: 3%;
+    font-style: italic;
+}
+
+
+.mission_color{
+    background-color: #2a304d;
+}
+.misway{
+    display: flex;
+    align-items: flex-end;
+    padding: 100px 25px;
+    flex-direction: column;
+    background-color: #2a304d;
+    gap: 25px;
+    max-width: 1030px;
+    margin: auto;
+}
+
+.mission-heading{
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.green-ways{
+    color: #cbcfe6;
+    font-family: 'Fjalla One';
+    font-size: 50px;
+    border-bottom: 5px solid #ffd900;
+    text-align: right;
+    padding-left: 50px;
+}
+
+.paragraph-way{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding-top: 1%;
+    
+}
+
+.paragraphs-div{
+    position: relative;
+}
+
+
+@media (max-width: 875px) {
+    .misway{
+    max-width: 750px;
+    }
+    .green-ways {
+        padding: 0;
+    }
+}
+
+@media (max-width: 625px) {
+    .refr-section{
+        flex-direction: column;
+        height: auto;
+        padding: 25px;
+        margin: auto;
+        max-width: 500px;
+    }
+    .refr-section > *{
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .refr-section h1{
+        font-size: 40px;
+    }
+}
