@@ -251,23 +251,21 @@ footer .logos {
     background-color: #343748;
 }
 @media (max-width: 915px) {
-    .main{
+        .main{
         display: flex;
         flex-direction: column;
         align-items: center ;
         margin-left: 0%;
         margin-right: 0%;
-        width: auto;
-        align-items: center;
+
         padding-bottom: 20%;
     }
     .main > div{
         margin-right: 1%;
         margin-left: 1%;
-        width:70%;
+        width:90%;
         align-items: center;
     }
-    
     .imggg >div{
         font-size: 160%;
         text-align: left;
