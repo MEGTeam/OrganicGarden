@@ -262,7 +262,7 @@ background-color: #ffd900;
 }
 @media(max-width:575px){
     .RR-main{
-        width: 250px;
+        width: 320px;
         grid-template-rows: 250px 240px 150px 220px auto;
     }
     .RR-3 img{
