@@ -4,11 +4,90 @@
     box-sizing: border-box;
 }
 
-* {
-    padding: 0%;
-    margin: 0%;
-    box-sizing: border-box;
+/* Start Second section */
+.RRR{
+    height: auto;
+    width: 100%;
+    background-color: #ffd900;
+    font-family: "Fjalla One", sans-serif;
 }
+.RR-main{
+    display: grid;
+    width: 1125px;
+    margin: 0px auto 20px auto;
+    grid-template-columns: repeat(2,calc(1125px/2));
+    grid-template-rows: 435px 450px;
+    grid-template-areas:
+        "RR-1 RR-2"
+        "RR-3 RR-4";
+    overflow: hidden;
+    position: relative;
+    top: 70px;
+    flex-direction: column;
+}
+.RR-1{
+    grid-area: RR-1;
+    overflow: hidden;
+}
+.RR-1 img{
+    width: 100%
+}
+.RR-2{
+    grid-area: RR-2;
+    background-color: white;
+    color: gray;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 20% 60px 40px 45px;
+}
+.RR-2::first-line{
+    font-size: 45px;
+    color: black;
+}
+.RR-2 hr{
+    margin-top: 15px;
+    border: 5px solid #ffd900;
+    width: 100%;
+    margin-bottom: 40px;
+    border-top: hidden;
+}
+.RR-Button{
+    margin-top: 25px;
+    cursor: pointer;
+}
+.RR-3{
+    grid-area: RR-3;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+}
+.RR-3 img{
+    width: 50%
+}
+.RR-list{
+    background-color: #2a304d;
+    width: 50%;
+    color: white;
+    font-size: 38px;
+    padding: 120px 40px 0px 55px;
+    line-height: 63px;
+}
+.RR-4{
+    overflow: hidden;
+}
+.RR-4 img{
+    position: relative;
+    bottom: 200px;
+}
+.RR-last{
+    background-image: url('../images/s_100.png');
+    width: 100%;
+    background-color: white;
+    margin-top: 140px;
+    height: 70px;
+}
+/* End Second section */
+
 
 .refr-back{
 background-color: #ffd900;
@@ -119,8 +198,95 @@ background-color: #ffd900;
 .paragraphs-div{
     position: relative;
 }
-
-
+/* Start Sec section */
+@media(max-width:1200px){
+    .RR-main{
+        width: 850px;
+        grid-template-columns: repeat(2,calc(850px/2));
+        grid-template-rows: 330px 390px;
+    }
+    .RR-list{
+        font-size: 27px;
+        line-height: 48px;
+    }
+    .RR-2{
+        padding-top: 9%;
+        font-size: 15px;
+    }
+}
+@media(max-width:991px){
+    .RR-main{
+        width: 750px;
+        grid-template-columns:100%;
+        grid-template-rows:repeat(4,485px);
+        grid-template-areas: "RR-1" "RR-3" "RR-2" "RR-4";   
+    }
+    .RR-4 img{
+        width: 100%
+    }
+    .RR-2{
+        font-size: 20px;
+        padding-top: 25%
+    }
+}
+@media(max-width:767px){
+    .RR-main{
+        width: 567px;
+        grid-template-rows: 500px 500px 350px 350px 100px;
+        grid-template-columns:repeat(auto-fill,100%);
+        grid-template-areas: "RR-1" "RR-3" "RR-3" "RR-2" "RR-2";
+    }
+    .RR-1 img{
+        height: 100%
+    }
+    .RR-2{
+        padding-top: 17%
+    }
+    .RR-3{
+        flex-direction: column;
+    }
+    .RR-3 img{
+        width: 100%;
+        height: 500px;
+    }
+    .RR-list{
+        width: 100%;
+        height: 350px;
+        padding: 57px 0px 40px 60px;
+        font-size: 34px;
+        line-height: 65px;
+    }
+    .RR-4{
+        display: none;
+    }
+}
+@media(max-width:575px){
+    .RR-main{
+        width: 250px;
+        grid-template-rows: 250px 240px 150px 220px auto;
+    }
+    .RR-3 img{
+        height: 62%;
+    }
+    .RR-list{
+        height: 38%;
+        padding: 13px 0px 40px 35px;
+        font-size: 18px;
+        line-height: 32px;
+    }
+    .RR-2{
+        font-size: 15px;
+        line-height: 32px;
+        padding: 10% 25px 40px 20px;
+    }
+    .RR-2::first-line{
+        font-size: 25px
+    }
+    .RR-2 hr{
+        margin-bottom: 22px;
+    }
+}
+/* End Sec Section */
 @media (max-width: 875px) {
     .misway{
     max-width: 750px;
