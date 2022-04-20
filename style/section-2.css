@@ -1,0 +1,966 @@
+* {
+    box-sizing: border-box;
+    margin: 0 ;
+}
+/* start style nav */
+:root {
+    --main-color: #2a304d;
+    --color: rgb(255 217 0);
+}
+
+header {
+    padding: 5px 20px;
+    font-family: "Ubuntu", sans-serif;
+    position: relative;
+    background-color: var(--main-color);
+    font-family: "Fjalla One", sans-serif;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    width: 75vw;
+    margin: auto;
+    position: relative;
+}
+
+header::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    bottom: 14px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    text-transform: capitalize;
+}
+
+nav > a {
+    font-weight: bolder;
+    color: var(--color);
+    font-size: 47.5px;
+    font-weight: 300;
+}
+
+nav ul li {
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.938);
+    padding: 100px 50px;
+    height: 100vh;
+    transform: translate(-100vw);
+    transition: 0.5s ease-in-out;
+    min-width: 30vw;
+    font-size: 18px;
+    font-family: "Open Sans";
+}
+
+.sidenav a {
+    color: white;
+}
+
+.sidenav ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    gap: 50px;
+}
+
+.active {
+    transform: translate(0);
+    z-index: 55;
+}
+.black_ {
+    display: block;
+    background-color: transparent;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: background-color 0.5s 0.2s ease-in-out;
+    z-index: 20;
+    pointer-events: none;
+}
+
+.display {
+    background-color: rgba(0, 0, 0, 0.767);
+    pointer-events: all;
+}
+
+.humburger {
+    display: none;
+    z-index: 100;
+    display: block;
+    cursor: pointer;
+    fill: var(--color);
+}
+.close {
+    color: white;
+    position: absolute;
+    top: 25px;
+    right: 12%;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.sidenav {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    width: fit-content;
+}
+/* end style nav */
+
+/* start media nav */
+@media (max-width: 997px) {
+    header nav {
+        margin: auto;
+        width: 775px;
+        padding: 10px;
+    }
+    header {
+        padding: 10px 0px;
+    }
+}
+
+@media (max-width: 775px) {
+    header nav {
+        width: auto;
+    }
+    .sidenav {
+        min-width: 45vw;
+    }
+}
+
+@media (max-width: 567px) {
+    header nav {
+        gap: 10px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sidenav {
+        padding: 100px 20px;
+    }
+}
+/* end media nav */
+
+/* start section OR-GA */
+.OR-GA{
+    width: 100%;
+    flex-wrap: wrap;
+}
+.imeg{
+    z-index: 5;
+    position: absolute;
+}
+.imeg-1{
+    z-index: 10;
+    position: absolute;
+}
+.imeg-2{
+    width: 80%;
+    height: 390px;
+    margin-left: 5%;
+    margin-top: 100px;
+}
+.imeg-3{
+    height: 390px;
+    width: 80%;
+    margin-left: 16.5%;
+    margin-top: 60px;
+}
+.coler{
+    z-index: 1;
+    width: 94%;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 600px;
+    background-color: #c0ccc1;
+    opacity: .5;
+    position: absolute;
+    margin-top: 400px;
+}
+.coler-1{
+    z-index: 15;
+    position: absolute;
+    margin-top: 200px;
+}
+.b-c{
+    z-index: 20;
+    height: 30px;
+    background-color: #ffd900;
+    position: absolute;
+    margin-top: 370px;
+    width: 80%;
+    margin-left: 3%;
+}
+.coler-1{
+    z-index: 25;
+    position: absolute;
+    margin-top: 400px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: 'Fjalla One', sans-serif;
+}
+.coler-1 h1{
+    color: #2a304d;
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding-top: 190px;
+    padding-left: 2px;
+    margin-bottom: 10px;
+}
+.coler-1 p{
+    margin: 20px 0 0;
+    font-style: italic;
+    font-size: 17px;
+    color: #111111;
+}
+.buton{
+    margin-top: 20px;
+    width: 180px;
+    height: 46px;
+    color: #111111;
+    background-color: #ffd900;
+    border: none;
+    font-size: 17px;
+    text-transform: uppercase;
+    margin-left: 2px;
+    margin-bottom: 5px;
+}
+.h1-text{
+    z-index: 30;
+    position: absolute;
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 960px;
+    margin-left: 3%;
+}
+.h1-text h1{
+    background-color: black;
+    width: 45px;
+    margin-left: 20px;
+    height: 40px;
+    float: left;
+    transform: skew(-40deg);
+}
+.h1-text h2{
+    background-color: black;
+    width: 45px;
+    margin-left: 35px;
+    height: 40px;
+    float: left;
+    transform: skew(-40deg);
+}
+.h1-text h3{
+    background-color: black;
+    width: 45px;
+    margin-left: 35px;
+    height: 40px;
+    float: left;
+    transform: skew(-40deg);
+}
+.h1-text h4{
+    background-color: black;
+    width: 30px;
+    margin-left: 35px;
+    height: 40px;
+    float: left;
+    transform: skew(-20deg);
+}
+.h1-text p{
+    font-style: italic;
+    font-size: 17px;
+    margin-top: 70px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+
+/* end section OR-GA
+
+
+
+
+
+
+
+
+
+
+/* start @media section OR-GA */
+    /* mopil */
+    /* small screen */
+    
+    @media (min-width: 480px) and (max-width: 600px){
+        .imeg-imeg-1-coler{
+            margin-left: 10%;
+            margin-right: 10%;
+            position: relative;
+            font-family: 'Fjalla One', sans-serif;
+        }
+        .imeg{
+            position: absolute;
+            z-index: 10;
+        }
+        .imeg-1{
+            position: absolute;
+            z-index: 20;
+            margin-left: 3.2%;
+        }
+        .imeg-2{
+            height: 480px;
+            width: 370px;
+            margin-top: 100px;
+            margin-left: 3.3%;
+        }
+        .imeg-3{
+            height: 500px;
+            width: 360px;
+            margin-left: 30px;
+            margin-top: 70px;
+        }
+        .coler{
+            width: 90%;
+            height: 600px;
+            background-color: #c0ccc1;
+            opacity: .5;
+            margin-top: 500px;
+            z-index: 5;
+            position: absolute;
+        }
+        .coler-1{
+            position: absolute;
+            z-index: 100;
+            margin-top: 520px;
+            margin-left: 15%;
+            width: 80%;
+            margin-right: 5%;
+        }
+        .coler-1 h1{
+            color: #2a304d;
+            font-size: 55px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding-top: 190px;
+            padding-left: 2px;
+            margin-bottom: 10px;
+        }
+        .coler-1 p{
+            margin: 20px 0 0;
+            font-style: italic;
+            font-size: 17px;
+            color: #111111;
+        }
+        .buton{
+            margin-top: 20px;
+            width: 180px;
+            height: 46px;
+            color: #111111;
+            background-color: #ffd900;
+            border: none;
+            font-size: 17px;
+            text-transform: uppercase;
+            margin-left: 2px;
+            margin-bottom: 5px;
+        }
+        .b-c{
+            width: 300px;
+            height: 30px;
+            background-color: #ffd900;
+            position: absolute;
+            z-index: 60;
+            margin-top: 510px;
+            padding-right: 50px;
+        }
+        .h1-text{
+            margin-left: 13%;
+            margin-top: 1060px;
+            font-family: 'Fjalla One', sans-serif;
+            z-index: 40;
+            position: absolute;
+        }
+        .h1-text h1{
+            background-color: black;
+            width: 45px;
+            margin-left: 20px;
+            height: 40px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h2{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            height: 40px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h3{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            height: 40px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h4{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            height: 40px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text p{
+            font-style: italic;
+            font-size: 17px;
+            margin-top: 70px;
+            margin-left: 60px;
+            margin-bottom: 20px;
+        }
+    }
+    @media (min-width: 600px) and (max-width: 799px) {
+        .imeg-imeg-1-coler{
+            position: relative;
+            font-family: 'Fjalla One', sans-serif;
+        }
+        .imeg{
+            position: absolute;
+            z-index: 10;
+        }
+        .imeg-1{
+            position: absolute;
+            z-index: 20;
+        }
+        .imeg-2{
+            height: 480px;
+            width: 390px;
+            margin-top: 150px;
+            margin-bottom: 20px;
+        }
+        .imeg-3{
+            height: 500px;
+            width: 375px;
+            margin-left: 100px;
+            margin-top: 60px;
+        }
+        .coler{
+            width: 60%;
+            height: 600px;
+            background-color: #c0ccc1;
+            opacity: .5;
+            margin-left: 200px;
+            margin-top: 500px;
+            z-index: 5;
+            position: absolute;
+        }
+        .coler-1{
+            position: absolute;
+            z-index: 100;
+            margin-top: 520px;
+            width: 55%;
+            margin-left: 40%;
+            margin-right: 5%;
+        }
+        .coler-1 h1{
+            color: #2a304d;
+            font-size: 55px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding-top: 190px;
+            padding-left: 2px;
+            margin-bottom: 10px;
+        }
+        .coler-1 p{
+            margin: 20px 0 0;
+            font-style: italic;
+            font-size: 17px;
+            color: #111111;
+        }
+        .buton{
+            margin-top: 20px;
+            width: 180px;
+            height: 46px;
+            color: #111111;
+            background-color: #ffd900;
+            border: none;
+            font-size: 17px;
+            text-transform: uppercase;
+            margin-left: 2px;
+            margin-bottom: 5px;
+        }
+        .b-c{
+            width: 400px;
+            height: 30px;
+            background-color: #ffd900;
+            position: absolute;
+            z-index: 60;
+            margin-top: 510px;
+            margin-left: 3.3%;
+        }
+        .h1-text{
+            margin-top: 650px;
+            font-family: 'Fjalla One', sans-serif;
+            z-index: 40;
+            position: absolute;
+        }
+        .h1-text h1{
+            background-color: black;
+            width: 45px;
+            margin-left: 20px;
+            height: 40px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h2{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            height: 40px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h3{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            height: 40px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h4{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            height: 40px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text p{
+            font-style: italic;
+            margin-top: 470px;
+            font-size: 17px;
+            margin-left: 230px;
+            margin-bottom: 20px;
+        }
+    } 
+    @media (min-width: 800px){
+        .imeg-2{
+            height: 480px;
+            width: 390px;
+            margin-top: 150px;
+            margin-bottom: 20px;
+        }
+        .imeg-3{
+            height: 500px;
+            width: 375px;
+            margin-left: 200px;
+            margin-top: 90px;
+        }
+        .coler{
+            position: absolute;
+            width: 60%;
+            height: 630px;
+            margin-left: 295px;
+            background-color: #c0ccc1;
+            opacity: .5;
+            margin-top: 400px;
+        }
+        .b-c{
+            width: 400px;
+            height: 30px;
+            background-color: #ffd900;
+            position: absolute;
+            z-index: 60;
+            margin-top: 550px;
+            width: 50%;
+        }
+        .h1-text{
+            width: 80%;
+            margin-left: 5%;
+            padding-bottom: 100px;
+            font-family: 'Fjalla One', sans-serif;
+            z-index: 70;
+            position: absolute;
+            margin-top: 650px;
+        }
+        .h1-text p{
+        margin-top: 400px;
+        padding-left: 120px;
+        }
+        .coler-1{
+            width: 50%;
+            margin-left: 38.5%;
+            margin-top: 520px;
+        }
+        .coler-1 h1{
+            color: #2a304d;
+            font-size: 55px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding-top: 190px;
+            padding-left: 2px;
+            margin-bottom: 10px;
+        }
+        .coler-1 p{
+            margin: 20px 0 0;
+            font-style: italic;
+            font-size: 17px;
+            color: #111111;
+        }
+        .h1-text h4{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            height: 40px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h5{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            height: 40px;
+            float: left;
+            transform: skew(-40deg);
+        }
+    }
+    @media (min-width: 768px) and (max-width: 991px){
+        .coler{
+            margin-top: 40px;
+            width: 500px;
+            height: 630px;
+            padding-right: 200px;
+        }
+        .imeg{
+            margin-left: 40px;
+        }
+        .imeg-2{
+            margin-top: 150px;
+        }
+        .imeg-3{
+            margin-top: 100px;
+        }
+        .imeg-1{
+            margin-left: 20px;
+        }
+        .coler{
+            margin-left: 30%;
+        }
+        .coler-1{
+            margin-top: 20px;
+            width: 52%;
+        }
+        .b-c{
+            margin-top: 550px;
+        }
+        .h1-text{
+        margin-top: 680px;
+        }
+        .h1-text h5{
+            background-color: black;
+            width: 0px;
+            margin-left: 0px;
+            height: 0px;
+        }
+        .h1-text h6{
+            background-color: black;
+            width: 0px;
+            margin-left: 35px;
+            margin-right: 7.5%;
+            height: 60px;
+            float: left;
+        }
+        .h1-text{
+            width: 80%;
+            margin-left: 5%;
+        }
+        .h1-text p{
+            margin-top: 20px;
+            padding-left: 60px;
+        }
+    }
+    /* mudim screen */
+    @media (min-width: 992px) { 
+        .imeg-imeg-1-coler{
+            position: relative;
+            display: flex;
+            width: 80%;
+            margin-left: 13%;
+            margin-right: 7%;
+            font-family: 'Fjalla One', sans-serif;
+        }
+        .imeg-2{
+            height: 480px;
+            width: 390px;
+            margin-top: 180px;
+            margin-bottom: 20px;
+        }
+        .imeg-3{
+            height: 500px;
+            width: 375px;
+            margin-left: 200px;
+            margin-top: 120px;
+        }
+        .coler{
+            width: 52%;
+            height: 630px;
+            margin-left: 55%;
+            background-color: #c0ccc1;
+            opacity: .5;
+            margin-top: 40px;
+        }
+        .coler-1{
+            position: absolute;
+            z-index: 21;
+            margin-left: 55%;
+            margin-top: 70px;
+        }
+        .coler-1 h1{
+            color: #2a304d;
+            font-size: 55px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding-top: 190px;
+            padding-left: 2px;
+            margin-bottom: 10px;
+        }
+        .coler-1 p{
+            margin: 20px 0 0;
+            font-style: italic;
+            font-size: 17px;
+            color: #111111;
+        }
+        .buton{
+            margin-top: 20px;
+            width: 180px;
+            height: 46px;
+            color: #111111;
+            background-color: #ffd900;
+            border: none;
+            font-size: 17px;
+            text-transform: uppercase;
+            margin-left: 2px;
+            margin-bottom: 5px;
+        }
+        .b-c{
+            height: 30px;
+            background-color: #ffd900;
+            position: absolute;
+            z-index: 60;
+            margin-top: 570px;
+            width: 48%;
+            margin-left: 0px;
+        }
+        .h1-text{
+            width: 90%;
+            margin-left: 7%;
+            margin-right: 3%;
+            padding-bottom: 100px;
+            margin-top: 700px;
+            font-family: 'Fjalla One', sans-serif;
+        }
+        .h1-text h1{
+            background-color: black;
+            width: 45px;
+            height: 60px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h2{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            height: 60px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h3{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            height: 60px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h4{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            height: 60px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h5{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            height: 60px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h6{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            margin-right: 7.5%;
+            height: 60px;
+            float: left;
+            transform: skew(-20deg);
+        }
+        .h1-text p{
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 17px;
+        }
+    }
+    /* larg screen */
+    @media (min-width: 1200px) { 
+        .imeg-imeg-1-coler{
+            position: relative;
+            display: flex;
+            width: 70%;
+            margin-left: 20%;
+            margin-right: 10%;
+            font-family: 'Fjalla One', sans-serif;
+        }
+        .imeg-2{
+            height: 480px;
+            width: 390px;
+            margin-top: 180px;
+            margin-bottom: 20px;
+        }
+        .imeg-3{
+            height: 500px;
+            width: 375px;
+            margin-left: 200px;
+            margin-top: 120px;
+        }
+        .coler{
+            width: 53%;
+            height: 630px;
+            margin-left: 50%;
+            background-color: #c0ccc1;
+            opacity: .5;
+            margin-top: 40px;
+        }
+        .coler-1{
+            margin-left: 51%;
+        }
+        .coler-1 h1{
+            color: #2a304d;
+            font-size: 55px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding-top: 190px;
+            padding-left: 2px;
+            margin-bottom: 10px;
+        }
+        .coler-1 p{
+            margin: 20px 0 0;
+            font-style: italic;
+            font-size: 17px;
+            color: #111111;
+        }
+        .buton{
+            margin-top: 20px;
+            width: 180px;
+            height: 46px;
+            color: #111111;
+            background-color: #ffd900;
+            border: none;
+            font-size: 17px;
+            text-transform: uppercase;
+            margin-left: 2px;
+            margin-bottom: 5px;
+        }
+        .b-c{
+            width: 400px;
+            height: 30px;
+            background-color: #ffd900;
+            position: absolute;
+            z-index: 60;
+            margin-top: 550px;
+            width: 48%;
+            padding-right: 50px;
+        }
+        .h1-text{
+            width: 70%;
+            margin: 0 15% 0 15%;
+            margin-top: 700px;
+            padding-bottom: 100px;
+            font-family: 'Fjalla One', sans-serif;
+        }
+        .h1-text h1{
+            background-color: black;
+            width: 45px;
+            height: 60px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h2{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            height: 60px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h3{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            height: 60px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h4{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            height: 60px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h5{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            height: 60px;
+            float: left;
+            transform: skew(-40deg);
+        }
+        .h1-text h6{
+            background-color: black;
+            width: 45px;
+            margin-left: 35px;
+            margin-right: 7.5%;
+            height: 60px;
+            float: left;
+            transform: skew(-20deg);
+        }
+        .h1-text p{
+            font-style: italic;
+            margin-top: 10px;
+            font-size: 17px;
+        }
+    }
+/* end @media section OR-GA */
