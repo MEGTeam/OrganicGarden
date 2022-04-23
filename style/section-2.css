@@ -292,18 +292,115 @@ nav ul li {
     margin-left: 60px;
     margin-bottom: 20px;
 }
-
-
 /* end section OR-GA
 
-
-
-
-
-
-
-
-
+/* Start RRR Section */
+.RR-main{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    width: 1100px;
+    margin: 820px auto 50px auto;
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+}
+.RR-1::first-line{
+    font-size: 48px;
+    font-weight: bold;
+    color: #2a304d ;
+    line-height: normal !important;
+}
+.RR-1 hr{
+    border: 5px solid yellow;
+    border-top: hidden;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+.RR-1{
+    order: 1;
+    font-size: 20px;
+    margin-top: 10px;
+    width: 51%;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #3e3e3e;
+    z-index: 2;
+}
+.RR-Button{
+    margin-top: 25px;
+    cursor: pointer;
+}
+.RR-2{
+    order: 2;
+    background-image: url(../images/zs.jpg);
+    width: 60%;
+    margin-left: -11%;
+    z-index: 1;
+    height: 434px;
+    margin-top: 42px;
+    background-repeat: no-repeat;
+    background-position: -8px -43px;
+}
+.RR-3{
+    order: 3;
+    background-image: url(../images/PineappleGingerIcedTea.jpg);
+    z-index: 2;
+    width: 430px;
+    height: 550px;
+    background-position: -130px -110px;
+    margin-left: 10%;
+    margin-top: -80px;
+}
+.RR-4{
+    order: 4;
+    width: 15%;
+    font-size: 20px;
+    color: #3e3e3e;
+    margin-left: 1%;
+    padding: 50px 0px 0px 0px;
+    line-height: 1.5;
+    font-style: italic;
+    height: fit-content;
+}
+.RR-5{
+    order: 5;
+    width: 30px;
+    background-color: yellow;
+    z-index: 2;
+    height: 280px;
+    margin-left: 25%;
+    margin-top: -162px;
+}
+.RR-6{
+    order: 6;
+    z-index: 1;
+    background-color: yellow;
+    width: 450px;
+    height: 450px;
+    margin-top: -350px;
+}
+.RR-7{
+    order: 7;
+    background-image: url('../images/PineappleGingerIcedTea (2).jpg');
+    height: 710px;
+    width: 550px;
+    z-index: 3;
+    background-position: 0px -95px;
+    margin-top: -170px;
+}
+.RR-8{
+    order: 8;
+    background-image: url(../images/s_100.png);
+    margin-left: 450px;
+    width: 600px;
+    height: 110px;
+    background-repeat: repeat;
+    z-index: 1;
+    margin-top: -70px;
+    background-position: 60px 0px;
+}
+/* End RRR Section */
 
 /* start @media section OR-GA */
     /* mopil */
@@ -964,3 +1061,154 @@ nav ul li {
         }
     }
 /* end @media section OR-GA */
+/* Start RRR Section */
+@media (max-width:1000px){
+    .RR-main{
+        width: 720px;
+        margin-top: 1200px;
+    }
+    .RR-2{
+        margin-top: 5px;
+        height: 480px;
+        background-position: -140px;
+    }
+    .RR-3{
+        height: 450px;
+        width: 330px;
+        background-size: 100%;
+        background-position: center;
+        margin-top: -44px;
+        left: -4%;
+        position: relative;
+    }
+    .RR-4{
+        margin-top: -380px;
+        margin-left: 9%;
+        width: 20%;
+        line-height: 1.7;
+    }
+    .RR-5{
+        margin-left: 18%;
+        width: 20px;
+        position: relative;
+        top: -425px;
+    }
+    .RR-6 {
+        order: 3;
+        width: 330px;
+        height: 400px;
+    }
+    .RR-7{
+        width: 400px;
+        height: 500px;
+        background-size: 100%;
+        background-position: 0px -30px;
+        margin-left: 40%;
+        margin-top: -230px;
+        background-repeat: no-repeat;
+    }
+    .RR-8{
+        margin-left: 40%;
+        width: 432px;
+    }
+}
+@media (max-width:768px){
+    .RR-main{
+        width: 550px;
+    }
+    .RR-1{
+        width: 80%;
+        font-size: 15px;
+    }
+    .RR-1::first-line{
+        font-size: 35px
+    }
+    .RR-1 hr{
+        width: 100%
+    }
+    .RR-2{
+        width: 80%;
+        margin-left: -60%;
+        margin-top: -30px;
+        height: 600px;
+    }
+    .RR-3{
+        order: 3;
+        margin-left: 0px;
+        margin-top: -80px;
+    }
+    .RR-4{
+        order: 7;
+        margin-top: 1px;
+        width: 26%;
+        margin-left: 20%;
+    }
+    .RR-5{
+        margin-left: 23%;
+        order: 5;
+    }
+    .RR-7{
+        order: 8;
+        margin-top: 25px;
+        margin-left: 24%;
+        width: 390px;
+    }
+    .RR-8{
+        margin-left: 10%;
+        width: 90%;
+        background-position: 100px 0px;
+    }
+}
+@media (max-width:576px){
+    .RR-main{
+        width: 350px;
+    }
+    .RR-1{
+        width: 100%;
+    }
+    .RR-1::first-line{
+        font-size: 30px;
+    }    
+    .RR-2{
+        margin-left: -87%;
+        width: 87%;
+        margin-top: 45px;
+        background-position: -170px 0px;
+    }
+    .RR-3{
+        margin-left: 0px;
+        width: 300px;
+        margin-top: -90px;
+    }
+    .RR-4{
+        order: 9;
+        margin-left: 0px;
+        padding-left: 0px;
+        width: 50%;
+        margin-top: 20px;
+    }
+    .RR-5{
+        margin-left: 90%;
+        top: -665px;
+    }
+    .RR-6{
+        margin-top: -300px;
+        margin-left: 50px;
+        width: 300px;
+        height: 500px;
+    }
+    .RR-7{
+        order: 7;
+        margin-top: -200px;
+        width: 300px;
+        margin-left: 0%;
+        height: 400px;
+    }
+    .RR-8{
+        order: 8;
+        height: 100px;
+        margin-top: -60px;
+        margin-left: 25px;
+    }
+}
+/* Start RRR Section */
