@@ -310,7 +310,7 @@ nav ul li {
     flex-direction: row;
     flex-flow: wrap;
     width: 1100px;
-    margin: 820px auto 50px auto;
+    margin: 0px auto 50px auto;
     position: relative;
     font-family: "Ubuntu", sans-serif;
 }
@@ -1085,7 +1085,6 @@ nav ul li {
 @media (max-width:1000px){
     .RR-main{
         width: 720px;
-        margin-top: 1200px;
     }
     .RR-2{
         margin-top: 5px;
@@ -1231,7 +1230,7 @@ nav ul li {
         margin-left: 25px;
     }
 }
-/* Start RRR Section */
+/* End RRR Section */
 
 /*the start of the second section*/
 .smallboxes{
