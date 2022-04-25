@@ -1258,7 +1258,10 @@ nav ul li {
     .h111{
         font-size: 40px !important;
     }
-
+    .ss-blue{
+        margin-left: auto !important;
+        margin-right:auto !important;
+    }
 }
 /* End RRR Section */
 
