@@ -1,3 +1,4 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 * {
     box-sizing: border-box;
     margin: 0 ;
@@ -1203,7 +1204,6 @@ nav ul li {
         margin-left: auto !important;
         margin-right:auto !important;
     }
-
 }
 @media (max-width:576px){
 
@@ -1430,4 +1430,334 @@ body{
     order: 11;
     margin-top: 10%;
     margin-left: 6%;
+}
+/* my section */
+
+.big_con {
+    display: flex;
+    flex-direction: column;
+    gap: 150px;
+    position: relative;
+    font-family: "Open Sans";
+}
+
+.yello-wall {
+    background-color: #ffd900;
+    height: 51%;
+    width: 37%;
+    position: absolute;
+    z-index: -1;
+    margin-top: 80px;
+}
+
+.first-con {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    line-height: 1.7;
+    max-width: 1030px;
+    align-self: center;
+    padding: 35px 60px 15px 50px;
+    margin-top: 120px;
+}
+.first-con h3 {
+    margin-bottom: 0px;
+    font-weight: bold;
+    font-size: 28px;
+    font-weight: 900;
+    letter-spacing: -1;
+    line-height: 1.4;
+    color: #2a304d;
+}
+
+.first-con h1 {
+    margin-bottom: 15px;
+    font-size: 60px;
+    font-family: "Fjalla One";
+    font-weight: normal;
+    color: #2a304d;
+    position: relative;
+    width: fit-content;
+    border-bottom: 5px solid #ffd900;
+    align-self: flex-end;
+    padding-left: 60px;
+    line-height: 1.4;
+}
+
+.first-con p{
+    font-size: 18px;
+}
+
+.second-con {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: right;
+    line-height: 1.5;
+    max-width: 1200px;
+    align-self: center;
+    padding: 15px 15px 0;
+    width: 100%;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.second-con .text{
+    text-align: left;
+    padding: 50px;
+}
+.second-con .text h1{
+    margin-bottom: 15px;
+    font-size: 50px;
+    font-family: "Fjalla One";
+    font-weight: normal;
+    color: #2a304d;
+}
+
+.second-con .text p{
+    font-size: 18px;
+}
+
+.second-con > *{
+    flex : 1
+}
+
+.second-con .img1{
+    background-image: url("./95f373590dad79bcf3202ce6edad5bcd.jpg");
+    background-position: center;
+    background-size: cover; 
+}
+
+
+.second-con .img2{
+    background-image: url("./53b1f260135ec7676401816dfad16b2c.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.reduce-paragraph{
+    color: black;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+
+.reduce-paragraph-1{
+    color: black;
+    font-size: 22px;
+    font-family: sans-serif;
+    margin-top: 20px;
+}
+
+.energy-heading{
+    color: #2a304d;
+    font-size: 50px;
+    font-family: 'Fjalla One';
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    border-bottom: 5px solid #ffd900;
+    margin-bottom: 26px;
+}
+
+.energy-paragraph{
+    color: black;
+    font-size: 25px;
+    font-family: sans-serif;
+    text-align: center;  
+    padding-top: 10px;
+}
+
+.third-con{
+    margin-bottom: 180px;
+    margin-top: 5%;
+}
+
+.gray-wall {
+    display: inline;
+    background-color: #dfe5df;
+    height: 26%;
+    width: 38%;
+    position: absolute;
+    z-index: -1;
+    margin-left: 56%;
+    transform: translateY(-30%);
+}
+/* end of my section */
+
+:root {
+    --main-color: #2a304d;
+    --color: rgb(255 217 0);
+}
+
+.flex-container {
+    display: flex;
+    height: fit-content;
+    flex: 1 1 100%;
+    font-family: "Fjalla One", sans-serif;
+} 
+
+.flex-container .flex-img {
+    min-height: 396px;
+    flex: 30%;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.flex-container .flex-img:first-of-type {
+    background-image: url("../images/95f373590dad79bcf3202ce6edad5bcd.jpg");
+}
+
+.flex-container .flex-img:nth-of-type(2) {
+    background-image: url("../images/53b1f260135ec7676401816dfad16b2c.jpg");
+}
+
+.flex-container .flex-grow {
+    padding: 100px 20px;
+    flex: calc(100% - 30% * 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.flex-container .flex-grow h1 {
+    font-size: 46px;
+    font-weight: 400;
+    color: #2a304d;
+}
+
+.flex-container .flex-grow p {
+    font-family: Open Sans;
+    font-size: 18px;
+}
+
+.yellow {
+    background-color: var(--color);
+}
+
+.text-con {
+    padding: 100px 20px;
+    background-color: var(--color);
+    font-family: "Fjalla One", sans-serif;
+    max-width: 875px;
+    margin: auto;
+}
+
+.text-con h1 {
+    font-size: 58px;
+    font-weight: 400;
+    color: #2a304d;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 5px solid #2a304d;
+}
+
+.text-con p {
+    font-family: "Open Sans";
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.text-con a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-top: 50px;
+    max-width: fit-content;
+}
+
+.form-color {
+    background-color: var(--main-color);
+}
+
+.form-con {
+    padding: 100px 25px;
+    max-width: 550px;
+    margin: auto;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-con > * {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    border: none;
+}
+
+.form-con button {
+    width: 30%;
+    background-color: var(--color);
+    font-family: "Open Sans";
+    cursor: pointer;
+}
+
+.form-con button:hover {
+    filter: brightness(0.8);
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-weight: 100;
+    color: rgb(184, 184, 184);
+}
+
+input:focus,
+textarea:focus {
+    background-color: transparent;
+    outline: none;
+    border: 1px solid white;
+    caret-color: white;
+    color: white;
+}
+
+input:hover,
+textarea:hover {
+    background-color: transparent;
+    color: white;
+}
+
+.form-color .logo {
+    background-image: url("../images/default-logo.png");
+    width: 150px;
+    min-height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 70px;
+}
+
+footer .logos {
+    margin-top: 50px;
+    display: flex;
+    gap: 15px;
+}
+
+.logos i {
+    color: white;
+    font-size: 20px;
+}
+
+@media (max-width: 875px) {
+    .text-con {
+        max-width: 550px;
+    }
+}
+
+@media (max-width: 769px) {
+    .flex-container {
+        flex-direction: column;
+    }
+    .form-con button {
+        width: 40%;
+    }
 }
