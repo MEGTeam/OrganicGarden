@@ -1070,6 +1070,16 @@ nav ul li {
             font-size: 17px;
         }
     }
+@media (max-width: 915px) {
+    .OR-GA{
+        height: 1180px;
+    }
+    @media (min-width: 768px) and (max-width: 915px){
+    .OR-GA{
+        height: 850PX;
+        }
+    }
+}
 /* end @media section OR-GA */
 /* Start RRR Section */
 @media (max-width:1000px){
