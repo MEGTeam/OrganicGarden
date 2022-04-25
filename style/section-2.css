@@ -11,7 +11,7 @@
 header {
     padding: 5px 20px;
     font-family: "Ubuntu", sans-serif;
-    position: relative;
+    position: relative; 
     background-color: var(--main-color);
     font-family: "Fjalla One", sans-serif;
 }
