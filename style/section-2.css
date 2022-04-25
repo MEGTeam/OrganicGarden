@@ -198,7 +198,7 @@ nav ul li {
     margin-top: 400px;
 }
 .coler-1{
-    z-index: 15;
+    z-index: 19;
     position: absolute;
     margin-top: 200px;
 }
@@ -1124,7 +1124,7 @@ nav ul li {
     .ss-blue{
         margin-top: -22%;
         order: 10;
-        z-index: 200;
+        z-index: 15;
         margin-left: -2%;
     }
     .h111{
